@@ -6,6 +6,9 @@
 int main()
 {
     std::cout << "Hello World!\n";
+
+    //TODO
+    //Figure out what gitignore is and why I need to use it
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
