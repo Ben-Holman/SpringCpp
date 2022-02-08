@@ -2,7 +2,8 @@
 using namespace std; 
 
 double calculate(double weight, double radius) {
-	double buoyancy = weight * ((4 / 3) * (radius * radius * radius));
+	double buoyancy = weight * ((4 / 3) * 3.14 * radius * radius * radius);
+
 	if (buoyancy >= weight) {
 		cout << "your object will float \n";
 	}
