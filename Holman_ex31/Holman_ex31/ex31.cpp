@@ -7,7 +7,7 @@ int main() {
 	// (1) initialize a counter to 0 to count number of grades double sum = 0;
 	// initialize the sum to 0 to make sure the sum at the beginning is 0 double average;
 	// prompt the user:
-	cout << "Enter five grades separated by a single space, then press <Enter>: "; 
+	cout << "Enter twelve grades separated by a single space, then press <Enter>: "; 
 	while (count < 13) { 
 		// (2) read five grades and compute their sum, count ensures 5 entries
 		// read each number and compute the sum:
