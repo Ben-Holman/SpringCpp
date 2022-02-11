@@ -1,0 +1,22 @@
+Question 1: Consider the following code fragment. Do you think the following code segment will 
+result in a syntax error?  If not, what would be the output of the program? 
+int x = 12;  
+{  
+       int x = 4;  
+       cout << "1st " << x << endl;  
+}  
+cout << "2nd " << x << endl;  
+
+I think it would result in a syntax error because the compiler is looking for an expression to block 
+  int x = 4;  
+       cout << "1st " << x << endl;
+into. 
+
+
+Question 2: Both a for loop and a while loop execute until the controlling expression becomes 
+false. Suppose you have a while loop that executes many times, but you want to exit the loop if a 
+certain condition occurs. How do you get out of a loop before the maximum number of loops is 
+reached?  
+
+if you wanted to break out of a loop before the max condition is met than you would use a 
+"break;" statement. 
