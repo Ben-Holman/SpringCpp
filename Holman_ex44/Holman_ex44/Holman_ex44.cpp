@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {   // begin of block 1 
     int x = 10;
-    //for (int i = 0; i < x; i++)    //the x here is the one declared in block 1 
+    for (int i = 0; i < x; i++)    //the x here is the one declared in block 1 
     {   // begin of block 2 
         cout << "x = " << x << endl; //the x here is the one declared in block 1 
         int x = 5;
