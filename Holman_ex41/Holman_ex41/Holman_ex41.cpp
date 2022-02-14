@@ -39,7 +39,7 @@ int main()
         cout << "I am moving to the Fourth Floor \n";
         floor = change_floor(4, floor);
         break;
-    defualt: 
+    default: 
         close_door(); 
     }
     /*
