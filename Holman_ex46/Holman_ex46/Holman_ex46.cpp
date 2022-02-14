@@ -1,24 +1,50 @@
+
 #include <iostream>
-#include <cmath>
-using namespace std; 
-
+using namespace std;
 int main() {
-	int x = 0; 
-	int n = 0; 
-	cout << "Enter the number you would want to see a multiplication table of (up tp 20):\n"; 
-	cin >> x; 
-	cout << "enter the number you where you want the multiplication number to stop (up to 20):\n"; 
-	cin >> n; 
+	cout << "Please Enter in a Number to be multipled: \n"; 
+	int i;
+	cin >> i;
+	cout << "Please enter the Number that you want it multiplied by: \n"; 
+	int j; 
+	cin >> j;  
 
-	cout << "Multiplication Table for n = " << x <<  " for " << n << "  number of times\n" << endl;
-	cout << "__________________________________\n" << endl; 
-	for (int i = 0; i <= x; i++) {
-		
-		cout << i << endl;
+	//cout << "\t"; 
+	cout << "Multiplication Table:\n\n";
+	cout << "Here, multiplication table for n = " << i << endl;
+	cout << "________________________________________________________________\n\n";
+	//cout << "\t";
+	printf("  ");
+	for (int count = 1; count <= i; count++) {
+		//printf("%4d", count);
+		cout << "\t" << count; 
 	}
-	for (int j = (1 + x); j <= (x + n); j++) {
-		int answer = n * x;
-		cout << answer << endl;
+	cout << endl; 
+
+	cout << "--+"; 
+	for (int count = 1; count <= i; count++) {
+		printf("--------"); 
 	}
-	/*This was a lot of trial and error for me. I didn't really use a lot of nested loops in my previous course. */
+	cout << endl;
+	for (int row = 1; row <= j; row++) {
+		printf("%i |", row);
+		for (int column = 1; column <= i; column++){
+			cout <<"\t" << row * column;
+			
+		}
+		cout << endl;
+	}
+	/*
+	for (int k = 1; k <= i; k++) {
+		//cout << endl; 
+		for (int h = 1; h <= 10; h++) {
+			cout << "\t" << k * h;
+
+		}
+		//cout << "|\n"; 
+		//cout << "|\n";
+	}
+	*/
+	//getch();
+	return 0;
 }
