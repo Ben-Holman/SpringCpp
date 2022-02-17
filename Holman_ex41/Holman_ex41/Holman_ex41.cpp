@@ -3,8 +3,28 @@
 #include<iostream>  
 #include<cmath>  
 using namespace std;
-void close_door();
-int change_floor(int choice, int floor);
+
+void close_door()
+{
+    cout << "I am closing the door \n";
+}
+int change_floor(int choice, int floor)
+{
+    int move;
+    move = floor - choice;
+    // Note floor = choice is already considered in main  
+    if (move < 0)
+    {
+        cout << "Move up by " << abs(move) << endl;
+    }
+    else
+    {
+        cout << "Mode down by " << abs(move) << endl;
+    }
+    floor = choice;
+    cout << "You are at floor " << floor << endl;
+    return floor;
+}
 int main()
 {
     int key;
@@ -109,5 +129,5 @@ int change_floor(int choice, int floor)
     floor = choice;
     cout << "You are at floor " << floor << endl;
     return floor;
+    */
 }
-*/

@@ -8,7 +8,7 @@ int main()
         int times;
         cout << "Enter number of times you want me to print \"Hello!\"\n";
         cin >> times;
-        for (int i = 1; i <= times; i++)
+        for (int i = 1; i < times; i++)
         {
             cout << "Hello!" << endl;
         }
