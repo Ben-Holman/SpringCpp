@@ -50,6 +50,7 @@ double total_calc(double r, double h) {
 	total = cross_area(r) + side_area(r,h);
 	return total; 
 }
+// I used the function to call the functions. 
 
 /*The correct answer should be:
  The cross-section area of the cylinder is 3.89556 inch-sq -- this is correct
