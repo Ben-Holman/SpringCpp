@@ -1,0 +1,38 @@
+how to write lab reports:
+
+Introduction: 
+what the lab is all about - summary. 
+Learning objectives. 
+new concepts and vocabulary that were introduced in the lab. 
+(minimum of a good size paragraph) 
+1 paragraph should be enough.
+
+Software Methodology:
+exercise header 
+how you solved the problem. 
+pseduo code can work too. 
+a picture of the code. 
+an explanation of what and why you wrote your code that way. 
+
+How did you solve the problem
+
+"I have an if-else statement and I changed it to a switch statement" 
+also a paragraph 
+figure labels on images. 
+
+Results: 
+what the running program did. 
+what were the case tests? 
+a paragraph about what the program did and what the output was. 
+possibly be 1 or 2 sentences about each test case. 
+figure labels for each case that you did. 
+
+Conclusion: 
+what you learned from it. 
+future work (the concepts I learned today, how can I use them in the future?)
+more emphasis here than on Intro. 
+2 distinct Paragrapghs. 
+1st paragrapgh - what you learned
+2nd how it could/will apply in the future.  
+Format: 
+PDF, if not, auto -5 points
