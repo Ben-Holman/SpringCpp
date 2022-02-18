@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2c9ed98d-a304-41c2-9cc7-c0f48537b649}</ProjectGuid>
-    <RootNamespace>Holmanex54</RootNamespace>
+    <ProjectGuid>{aaf1de7e-ea63-49fd-a530-ff034dece3cd}</ProjectGuid>
+    <RootNamespace>Holmanex56</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Holman_ex54.cpp" />
+    <ClCompile Include="Holman_ex56.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
