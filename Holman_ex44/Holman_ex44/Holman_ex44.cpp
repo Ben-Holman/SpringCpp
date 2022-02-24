@@ -1,5 +1,5 @@
 /*
-The variable x is initalized at 10. The loop runs 10 times and prints 1 - 10. Then, within the loop, x is assigned the value of 5. 
+The variable x is initialized  at 10. The loop runs 10 times and prints 1 - 10. Then, within the loop, x is assigned the value of 5. 
 x would be assigned 5 and i would be assigned 10 in block 2. 
 After block 2 then x would be printed as having the value of 10 again because it is no longer within block 2. 
 */
