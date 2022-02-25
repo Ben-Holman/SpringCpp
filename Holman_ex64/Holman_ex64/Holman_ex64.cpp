@@ -9,13 +9,16 @@ int space(int argument1);
 int main() {
 	while (true) {
 		char answer1; 
-		cout << "Would Would you Like to Print? A Triangle or Diamond (T/D)\n"; 
+		cout << "Would Would you Like to Print? A Triangle or Diamond (T/D) or type N to quit.\n"; 
 		cin >> answer1; 
 		if (answer1 == 't' || answer1 == 'T') {
 			cout << "You Have Chosen A Triangle\n"; 
 		}
 		if (answer1 == 'd' || answer1 == 'D') {
 			cout << "You Have Chosen A Diamond\n"; 
+		}
+		if (answer1 == 'n' || answer1 == 'N') {
+			break; 
 		}
 		int size = 0;
 		cout << "Please input a number\n";
