@@ -1,74 +1,63 @@
 #include <iostream>
 #include <cmath>
-using namespace std; 
+using namespace std;
 //----------------------DECLARATIONS----------------------------------------------
-int rows(int argument1);
-//int columns(int argument1); 
-int space(int argument1); 
-int traingle(int argument1); 
-int diamond(int argument1); 
+void triangle(int size);
+void diamond(int size);
 //------------------------MAIN----------------------------------------------------
 int main() {
-	while (true) {
-		int size = 0;
-		cout << "Please input a number\n";
-		cin >> size;
-		//cout << rows(size) << space(size) << endl;
-		char answer1; 
-		cout << "Would Would you Like to Print? A Triangle or Diamond (T/D) or type N to quit.\n"; 
-		cin >> answer1; 
-		if (answer1 == 't' || answer1 == 'T') {
-			cout << "You Have Chosen A Triangle\n"; 
-			cout << triangle(size); 
-		}
-		if (answer1 == 'd' || answer1 == 'D') {
-			cout << "You Have Chosen A Diamond\n"; 
-			cout << diamond(size); 
-		}
-		if (answer1 == 'n' || answer1 == 'N') {
-			break; 
-		}
-		
-
+	int size = 0;
+	cout << "Welcome to the Draw Pattern Program!\n";
+	cout << "Please enter a number for the size of the pattern\n";
+	cin >> size;
+	cout << "Please enter in what kind of Pattern you would like. Triangle or Diamond (T/D)\n";
+	char answer;
+	cin >> answer;
+	if (answer == 't' || answer == 'T') {
+		triangle(size);
+	}
+	if (answer == 'd' || answer == 'D') {
+		diamond(size);
 	}
 
+	return 0;
 }
+
+
 //------------------------FUNCTIONS-----------------------------------------------
-int rows(int argument1) {
-	for (int rows = 0; rows <= argument1; rows++) {
-		cout << "*\n"; 
+void triangle(int size) {
+
+	for (int i = 1; i <= size; i++) {
+		for (int j = 1; j <= size - i; j++) {
+			cout << " ";
+		}
+		for (int k = 1; k <= (2 * i - 1); k++) {
+			cout << "*";
+		}
+		cout << endl;
 	}
 
-}
-/*
-int columns(int argument1) {
-
 
 }
-*/
-int space(int argument1) {
-	for (int space = 0; space < argument1; space++) {
-
+// if I have the triangle correct, all I have to do is reverse the triangle. 
+void diamond(int size) {
+	triangle(size);
+	int space;
+	space = 1;
+	for (int i = 1; i <= size - 1; i++)
+	{
+		for (int j = 1; j <= space; j++)
+			cout << " ";
+		space++;
+		for (int k = 1; k <= 2 * (size - i) - 1; k++)
+			cout << "*";
+		cout << "\n";
 	}
-
-}
-int triangle(int argument1) {
-	
-	rows(argument1); 
-
-	space(argument1);
-
-	int total = 0; 
-
-	return total; 
-}
-
-int diamond(int argument1) {
-
 }
 /*
-I've started out just decalring all the functions I think I'll need. I'm going to code the functions first before I code the main part. 
-I then started to code the Rows function. 
-
+I've started out just decalring all the functions I think I'll need. I'm going to code the functions first before I code the main part.
+I then started to code the Rows function.
+I'm actually going to code ther whole program in Main() so that I can test it and see if I have the ocorrect logic.
+When I do, I will then break it down into functions.
 
 */
