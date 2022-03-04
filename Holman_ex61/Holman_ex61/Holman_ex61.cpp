@@ -7,8 +7,8 @@ const double PI = 3.14159; // This constant is defined globally, known to all fu
 const double CONVERSION = 0.3937; // This is the cm to inch conversion factor?
 const double SPHERE_AREA = 4 * PI; 
 const double VOLUME = (4.0 / 3.0) * PI; 
-double volume(double r); // Function declaration for function that computes cross section area
-double area(double r); // Function declaration for function that computes side area
+double volume(double r); // Function declaration for function that computes the sphere volume
+double area(double r); // Function declaration for function that computes area
 using namespace std; 
 int main(void)
 {
