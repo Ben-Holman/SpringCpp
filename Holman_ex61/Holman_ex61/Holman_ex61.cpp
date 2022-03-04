@@ -5,37 +5,41 @@
 const double PI = 3.14159; // This constant is defined globally, known to all functions in this 
  // program as PI
 const double CONVERSION = 0.3937; // This is the cm to inch conversion factor?
-double surface_area(double r); // Function declaration for function that computes cross section area
-double surface_area(double r); // Function declaration for function that computes side area
+const double SPHERE_AREA = 4 * PI; 
+const double VOLUME = (4.0 / 3.0) * PI; 
+double volume(double r); // Function declaration for function that computes cross section area
+double area(double r); // Function declaration for function that computes side area
 using namespace std; 
 int main(void)
 {
 	//using namespace std;
-	double h, r; //variables local to the main function
-	cout << "Enter the radius and the height of the cylinder in cm <Enter> ";
-	cin >> r >> h;
+	double r; //variables local to the main function
+	cout << "Enter the radius of the sphere in cm <Enter> ";
+	cin >> r;
 	cout << endl;
 	cout << "Before I do any computation or call any function, I want to let you know that \n";
-	cout << "you have entered r = " << r << " and h = " << h << "." << endl;
+	cout << "you have entered r = " << r <<  endl;
 	cout << "I am planning to use inch, thus in the first function, I will convert r, and " << endl;
-	cout << "in the second one I will convert h \n";
-	cout << "The cross section area of the cylinder is " << surface_area(r) << " inch-sqr " << endl;
-	cout << "The side area of the cylinder is " << surface_area(r) << " inch-sqr \n\n";
+	cout << "The cross section area of the sphere is " << volume(r) << " inch-sqr " << endl;
+	cout << "The side area of the sphere is " << area(r) << " inch-sqr \n\n";
 
 	return 0;
 }
-double surface_area(double r)
+double volume(double r)
 {
 	//using namespace std;
 	//Cross section area includes the disks at the bottom and the top
-	
+	double volume = VOLUME * r * r * r; 
 
-	return (4.0 / 3.0) * PI * pow(r,3);
+	return volume;
 }
-double surface_area(double r)
+double area(double r)
 {
-	//using namespace std;
-	double area = 4 * PI * pow(r, 2); 
+	using namespace std;
+	double area; //variable local to Side_area function
+	//h = h * CONVERSION; // converting h to inch
+	r = r * CONVERSION; // converting r to inch
+	area = SPHERE_AREA * r * r;
 
 	return area;
 }
@@ -43,4 +47,6 @@ double surface_area(double r)
 /*
 * function overloading would not work for the sphere because the only variable that the sphere takes is radius. This is no height. 
 * Both functions would have the same name with the same parameters and arguments. 
+* you can overload the function because the arguments are different. 1 surface area function takes one argument,
+while the second function takes 2 arguments and both have the same name. 
 */
