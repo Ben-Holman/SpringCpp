@@ -4,20 +4,18 @@ using namespace std;
 //----------------------DECLARATIONS----------------------------------------------
 void triangle(int size);
 void diamond(int size);
+int input();
 //------------------------MAIN----------------------------------------------------
 int main() {
-	int size = 0;
-	cout << "Welcome to the Draw Pattern Program!\n";
-	cout << "Please enter a number for the size of the pattern\n";
-	cin >> size;
+	int screenDisplay = input(); 
 	cout << "Please enter in what kind of Pattern you would like. Triangle or Diamond (T/D)\n";
 	char answer;
 	cin >> answer;
 	if (answer == 't' || answer == 'T') {
-		triangle(size);
+		triangle(screenDisplay);
 	}
 	if (answer == 'd' || answer == 'D') {
-		diamond(size);
+		diamond(screenDisplay);
 	}
 
 	return 0;
@@ -53,6 +51,15 @@ void diamond(int size) {
 			cout << "*";
 		cout << "\n";
 	}
+}
+
+int input() {
+	int size = 0;
+	cout << "Welcome to the Draw Pattern Program!\n";
+	cout << "Please enter a number for the size of the pattern\n";
+	cin >> size;
+	return size; 
+
 }
 /*
 I've started out just decalring all the functions I think I'll need. I'm going to code the functions first before I code the main part.
