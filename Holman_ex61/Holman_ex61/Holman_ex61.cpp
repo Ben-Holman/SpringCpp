@@ -20,7 +20,7 @@ int main(void)
 	cout << "Before I do any computation or call any function, I want to let you know that \n";
 	cout << "you have entered r = " << r <<  endl;
 	cout << "I am planning to use inch, thus in the first function, I will convert r, and " << endl;
-	cout << "The cross section area of the sphere is " << volume(r) << " inch-sqr " << endl;
+	cout << "The volume of the sphere is " << volume(r) << " inch-sqr " << endl;
 	cout << "The side area of the sphere is " << area(r) << " inch-sqr \n\n";
 
 	return 0;
@@ -29,7 +29,8 @@ double volume(double r)
 {
 	//using namespace std;
 	//Cross section area includes the disks at the bottom and the top
-	double volume = VOLUME * r * r * r; 
+	r = r * CONVERSION;  
+	double volume = VOLUME * (r * r * r);
 
 	return volume;
 }
