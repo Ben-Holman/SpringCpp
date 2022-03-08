@@ -70,7 +70,7 @@ int input() {
 }
 char character_input() {
 	char character;
-	cout << "What character would you like to print? Star or Amberson? (*/&)\n";
+	cout << "What character would you like to print? Star or Ampersand? (*/&)\n";
 	cin >> character;
 	// cout << endl; 
 	if (character == '*') {
