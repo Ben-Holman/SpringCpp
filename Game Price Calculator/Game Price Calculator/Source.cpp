@@ -2,18 +2,18 @@
 #include <cmath>
 #include <string>
 using namespace std; 
-
-double calc_stark(double price); 
-double calc_summit(double price);
-void display();
-double input(); 
-double county(double price);
-
+//-----------------------------FUNCTION DECLARATION-----------------------------------
+double calc_stark(double price); // calculates the price with the stark county tax rate
+double calc_summit(double price); // calculates the price with the summit county tax rate 
+void display(); // the initial sreen display
+double input(); // gets the user input for the different calc functions
+double county(double price); // gets the input from the user as to which county they live in and call the respective county calc function. 
+//-----------------------------------MAIN---------------------------------------------
 int main() {
 	while (true) {
 		display();
 		double price = input();
-		 county(price); 
+		cout << county(price); 
 		cout << "\nwant to continue?\n"; 
 		char answer; 
 		cin >> answer; 
@@ -26,7 +26,7 @@ int main() {
 		}
 	}
 }
-
+//-------------------------------------FUNCTIONS---------------------------------------------
 double calc_stark(double price) {
 	cout.setf(ios::showpoint);
 	cout.setf(ios::fixed); 
@@ -57,13 +57,12 @@ double county(double price) {
 	cout << "What County do you live in? Enter [1] for Summit County or enter [2] for Stark\n"; 
 	cin >> county; 
 	switch (county) {
-	case '1': 
+	case 1: 
 		cout << "you have chosen Summit County\n"; 
 		return calc_summit(price); 
-	
 		break;
-	case '2': 
-		cout << "You have chosen Stark County\n"; 
+	case 2: 
+		cout << "You have chosen Stark County\n";
 		return calc_summit(price);
 		break;
 	default: 
