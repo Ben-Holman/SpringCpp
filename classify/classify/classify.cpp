@@ -31,3 +31,5 @@ void classifyNumber() {
 void printResults() {
 
 }
+
+// see if you can't store the integers in a text file and then sort it from the file. in classify()
