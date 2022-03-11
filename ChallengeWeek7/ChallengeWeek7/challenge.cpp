@@ -54,10 +54,34 @@ void upsideDownTriangle(int size, char character) {
 }
 
 void square(int size, char character) {
-
+	int rows;
+	for (rows = 0; rows != size; rows++) {
+		for (int columns = 0; columns != size; columns++) {
+			if ((rows == 0) || (rows = size - 1) || (columns == 0) || (columns == size - 1)) {
+				cout << character << " ";
+			}
+			else {
+				cout << "  ";
+			}
+			//cout << endl; 
+		}
+		cout << endl;
+	}
 }
 void rectangle(int size, char character) {
+	int rows;
+	for (rows = 0; rows != size; rows++) {
+		for (int columns = 0; columns != size; columns++) {
+			if ((rows == 0) || (rows = size - 1) || (columns == 0) || (columns == size - 1)) {
+				cout << character << " " << endl;
+			}
+			else {
+				cout << "  ";
+			}
 
+		}
+		cout << "\n\n";
+	}
 }
 
 int input() {
