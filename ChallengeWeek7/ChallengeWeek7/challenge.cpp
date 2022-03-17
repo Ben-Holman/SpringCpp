@@ -46,37 +46,38 @@ void upsideDownTriangle(int size, char character) {
 	character;
 	space = 1;
 	//cout << endl; 
-	for (int i = 1; i <= 2 * (size - i) - 1; i++)
+	for (int i = 1; i <= size - 1; i++)
 	{
-		for (int j = 1; j <= space; j++) 
-			cout << character;
-			space++;
-		for (int k = 1; k <=2 *(size - 1); k++) 
+		cout << character;
+		/*
+		for (int j = 1; j <= space; j++)
 			cout << " ";
-
+		*/
+		space++;
+		for (int k = 1; k <= 2 * (size - i) - 1; k++)
+			cout << character;
 		cout << "\n";
-	} // A different upside down triangle, look at example. 
-	// I reversed the original triangle loop from the diamond function. 
+		
+	} // in class we used 2 * rowNumber + 1, I used 2 * i - 1 because my variable starts at 1.  
 }
 
 void sideWaysTriangle(int size, char character) {
-	upsideDownTriangle(size, character); 
-	int space;
-	character;
-	space = 1;
-	//cout << endl; 
-	for (int i = 1; i <= size - 1 - 1; i++)
-	{
-		for (int j = 1; j <= space; j++)
-			cout << character;
-		space++;
-		for (int k = 1; k <= 2 * (size - i) -1; k++)
-			cout << " ";
+	cout << endl;
+	for (int i = 1; i <= size; i++) {
+		for (int j = 1; j <= size - i; j++) {
+			//cout << " ";
+		}
 
-		cout << "\n";
-	} // A different upside down triangle, look at example. 
+		for (int k = 1; k <= (2 * i - 1); k++) {
+			cout << character;
+		}
+		cout << endl;
+	}
+	upsideDownTriangle(size, character);
+	//upside down triangle, look at example. 
 	// I reversed the original triangle loop from the diamond function. 
 	// I have half of the sideways triangle, just need the bottom half. 
+	// modified the triangle() code and then copied it to the sideways triangle() functions 
 
 	cout << endl;
 }
@@ -85,7 +86,7 @@ void square(int size, char character) {
 	for (int rows = 0; rows != size; rows++) {
 		//cout << endl; 
 		for (int columns = 0; columns != size; columns++) {
-			if ((rows == 0) || (rows = size - 1) || (columns == 0) || (columns == size - 1)) {
+			if ((rows == 0 || rows = size - 1) || (columns == 0 || columns == size - 1)) {
 				cout << character << " ";
 			}
 			else {
