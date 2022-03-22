@@ -1,4 +1,4 @@
-<html><head><title>This Is My C++ HTML Converter.</title><h1> C++ HTML Converter </h1></head><html>
+<html>
 <head>
 <title>
 This Is Another Test File For The Problem Of The Week

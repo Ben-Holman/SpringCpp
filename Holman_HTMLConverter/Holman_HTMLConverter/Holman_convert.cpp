@@ -41,11 +41,14 @@ int main() {
 
 void instructions() {
 	cout << "This program coverts a text file to a HTML file to display in your broswer.\n"; 
+	cout << "The files uou have available are:\n"; 
+	cout << "myFile.txt\n"; 
+	cout << "myFile2.txt\n"; 
 	cout << "Please enter the name of the file that you would like to convert i.e 'input.txt'\n"; 
 }
 
 void get_test_files(ifstream& in_s, ofstream& out_s) {
-	char input_file[15];
+	char input_file[180];
 	cin >> input_file;
 	in_s.open(input_file); 
 	if(in_s.fail())
@@ -83,3 +86,4 @@ void copy_text(ifstream& in_s, ofstream& out_s) {
 	in_s.close(); 
 	out_s.close(); 
 }
+// I chose 180 for the size as an arbitrary number that was big enough to run both files. 
