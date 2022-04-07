@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Holman_ex94", "Holman_ex94\Holman_ex94.vcxproj", "{F225369E-8762-4FFF-9235-B09EEA1F531C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F225369E-8762-4FFF-9235-B09EEA1F531C}.Debug|x64.ActiveCfg = Debug|x64
+		{F225369E-8762-4FFF-9235-B09EEA1F531C}.Debug|x64.Build.0 = Debug|x64
+		{F225369E-8762-4FFF-9235-B09EEA1F531C}.Debug|x86.ActiveCfg = Debug|Win32
+		{F225369E-8762-4FFF-9235-B09EEA1F531C}.Debug|x86.Build.0 = Debug|Win32
+		{F225369E-8762-4FFF-9235-B09EEA1F531C}.Release|x64.ActiveCfg = Release|x64
+		{F225369E-8762-4FFF-9235-B09EEA1F531C}.Release|x64.Build.0 = Release|x64
+		{F225369E-8762-4FFF-9235-B09EEA1F531C}.Release|x86.ActiveCfg = Release|Win32
+		{F225369E-8762-4FFF-9235-B09EEA1F531C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAC05CD9-ABF1-4DF1-A2ED-BF34674C95AF}
+	EndGlobalSection
+EndGlobal
