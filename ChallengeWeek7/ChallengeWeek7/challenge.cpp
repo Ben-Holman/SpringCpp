@@ -86,8 +86,14 @@ void square(int size, char character) {
 	for (int rows = 0; rows != size; rows++) {
 		//cout << endl; 
 		for (int columns = 0; columns != size; columns++) {
-			if ((rows == 0 || rows = size - 1) || (columns == 0 || columns == size - 1)) {
+			if ((rows == 0 )|| (rows = size - 1)) {
 				cout << character << " ";
+			}
+			else {
+				cout << " "; 
+			}
+			if (columns == 0 || columns == size - 1) {
+
 			}
 			else {
 				cout << "  ";
@@ -98,18 +104,24 @@ void square(int size, char character) {
 	}
 }
 void rectangle(int size, char character) {
-	int rows;
-	for (rows = 0; rows != size; rows++) {
+	for (int rows = 0; rows != size; rows++) {
+		//cout << endl; 
 		for (int columns = 0; columns != size; columns++) {
-			if ((rows == 0) || (rows = size - 1) || (columns == 0) || (columns == size - 1)) { 
-				cout << character << " "; 
+			if ((rows == 0) || (rows = size - 1)) {
+				cout << character << " ";
+			}
+			else {
+				cout << " ";
+			}
+			if (columns == 0 || columns == size - 1) {
+
 			}
 			else {
 				cout << "  ";
 			}
-			
+			//cout << endl; 
 		}
-		cout << "\n\n";
+		cout << endl;
 	}
 }
 
@@ -159,7 +171,7 @@ void options(int size, char character) {
 		return sideWaysTriangle(size, character);
 		break;
 	case 4:
-		cout << "You Chose Square\n"; 
+		cout << "You Chose Square\n";  
 		return square(size, character);
 		break;
 	case 5:
