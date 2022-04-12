@@ -1,6 +1,18 @@
 // Ben Holman 4/9/2022
 //Last udated: 4/12/2022
 
+
+//TODO
+//create character and enemy specific classes 
+//add defensive stats
+
+//flesh out the room generation
+//flesh out the combat
+
+//mess around with making words in the console different colors
+// END TODO
+
+
 #include <iostream>
 #include <string>
 #include <cmath>
