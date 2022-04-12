@@ -1,5 +1,5 @@
 // Ben Holman 4/9/2022
-//Last udated: 4/12/2022
+//Last updated: 4/12/2022
 
 
 //TODO
@@ -10,13 +10,14 @@
 //flesh out the combat
 
 //mess around with making words in the console different colors
+// string noun("ants") -- OOP version
 // END TODO
 
 
 #include <iostream>
 #include <string>
 #include <cmath>
-#include <fstream>
+//#include <fstream>
 
 // CLASSES
 class CreateCharacter {
