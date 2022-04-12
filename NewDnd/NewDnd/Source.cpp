@@ -329,7 +329,7 @@ void createArcher(CreateEnemy&) {
 	int Wis = 5;
 	int Char = 4;
 	Archer.weaponName = "Short Bow";
-	cout << "You Encounter A " << Archer.ClassName << "!\n";
+	cout << "You Encounter An " << Archer.ClassName << "!\n";
 	cout << "Weapon Equipped: " << Archer.weaponName << "\n";
 }
 
@@ -338,12 +338,16 @@ void createArcher(CreateEnemy&) {
 //ROOM CREATION & BASIC COMBAT
 
 void generateRoom() {
+	using std::cout; 
+	using std::endl;
+	//Begin function
 	CreateEnemy Skeleton;
 	CreateEnemy Highway_Man;
 	CreateEnemy Archer;
+	CreateCharacter character;
 	int roomGen = 0;
 
-	roomGen = (rand() % 2) + 1;
+	roomGen = (rand() % 3);
 
 	switch (roomGen) {
 	case 1:
@@ -354,10 +358,15 @@ void generateRoom() {
 	case 3:
 		createArcher(Archer);
 	}
+	cout << endl; 
+	combat(character, Archer); 
 }
 
 void combat(CreateCharacter&, CreateEnemy&) {
+	using std::cout; 
+	using std::endl; 
 
+	cout << "== BEGIN COMBAT: ==\n\n"; 
 }
 
 //=========================================================================================================================================================
