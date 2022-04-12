@@ -41,9 +41,9 @@ int main() {
 
 void instructions() {
 	cout << "This program coverts a text file to a HTML file to display in your broswer.\n"; 
-	cout << "The files uou have available are:\n"; 
+	cout << "The files uou have available are:\n\n"; 
 	cout << "myFile.txt\n"; 
-	cout << "myFile2.txt\n"; 
+	cout << "myFile2.txt\n\n"; 
 	cout << "Please enter the name of the file that you would like to convert i.e 'input.txt'\n"; 
 }
 
@@ -67,6 +67,7 @@ void write_header(ofstream& out_s) {
 	out_s << "This Is My C++ HTML Converter.";
 	out_s << "</title>";
 	out_s << "<h1> C++ HTML Converter </h1>";
+	out_s<< "<link rel=\"stylesheet\" href=\"style.css\">";
 	out_s << "</head>";
 }
 
