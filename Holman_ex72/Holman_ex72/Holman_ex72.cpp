@@ -11,7 +11,6 @@ void get_input(); // gets the user input for the day, month and year
 void output(); // takes the user input and displays it in European format. 
 
 int main() {
-	get_input(); 
 	output(); 
 }
 
