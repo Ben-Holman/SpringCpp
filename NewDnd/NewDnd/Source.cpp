@@ -1,23 +1,18 @@
 // Ben Holman 4/9/2022
-//Last updated: 4/12/2022
+//Last udated: 4/12/2022\
 
-
-//TODO
-//create character and enemy specific classes 
-//add defensive stats
-
-//flesh out the room generation
-//flesh out the combat
-
-//mess around with making words in the console different colors
-// string noun("ants") -- OOP version
-// END TODO
-
-
+// == C++ Include Files ==  
 #include <iostream>
 #include <string>
 #include <cmath>
-//#include <fstream>
+#include <fstream>
+
+// == My Include Files == 
+#include "Player.h"
+#include "Enemy.h"
+#include "Weapon.h"
+#include "RoomGen.h"
+#include "Combat.h"
 
 // CLASSES
 class CreateCharacter {
@@ -342,25 +337,21 @@ void createArcher(CreateEnemy&) {
 	int Wis = 5;
 	int Char = 4;
 	Archer.weaponName = "Short Bow";
-	cout << "You Encounter An " << Archer.ClassName << "!\n";
+	cout << "You Encounter A " << Archer.ClassName << "!\n";
 	cout << "Weapon Equipped: " << Archer.weaponName << "\n";
 }
 
 //====================================================================================================================================================
 
 //ROOM CREATION & BASIC COMBAT
-
+/*
 void generateRoom() {
-	using std::cout; 
-	using std::endl;
-	//Begin function
 	CreateEnemy Skeleton;
 	CreateEnemy Highway_Man;
 	CreateEnemy Archer;
-	CreateCharacter character;
 	int roomGen = 0;
 
-	roomGen = (rand() % 3);
+	roomGen = (rand() % 2) + 1;
 
 	switch (roomGen) {
 	case 1:
@@ -371,15 +362,10 @@ void generateRoom() {
 	case 3:
 		createArcher(Archer);
 	}
-	cout << endl; 
-	combat(character, Archer); 
 }
-
+*/
 void combat(CreateCharacter&, CreateEnemy&) {
-	using std::cout; 
-	using std::endl; 
 
-	cout << "== BEGIN COMBAT: ==\n\n"; 
 }
 
 //=========================================================================================================================================================
