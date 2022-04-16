@@ -12,4 +12,7 @@ Items Class
 Defensive Shields
   this class houses shields 
   
+Player Class
+	for the gamers
+
   
