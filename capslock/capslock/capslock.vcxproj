@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9038b68e-9324-4cdd-a353-9659512e8316}</ProjectGuid>
-    <RootNamespace>NewDnd</RootNamespace>
+    <ProjectGuid>{061c5959-fe54-4f97-8d46-862e5d876918}</ProjectGuid>
+    <RootNamespace>capslock</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,14 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="Combat.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="RoomGen.h" />
-    <ClInclude Include="Weapon.h" />
+    <ClCompile Include="capslock.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
